@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Dancing Script", cursive; */
+}
+.whatsapp{
+    position: fixed;
+    color: #4AC657;
+    bottom: 100px;
+    right: 20px;
+    font-size: 300%;
+    background-color: transparent;
+    z-index: 1;
+    animation-name: whatsapp;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes whatsapp{
+    0%{transform: translateY(0);}
+    50%{transform: translateY(-5px);}
+    100%{transform: translateY(0);}
+}
+header{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: larger;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    z-index: 20;
+    width: 99.5%;
+}
+.header__s1{
+    color: purple;
+    font-weight: bold;
+    font-size: 2vw;
+}
+.header__s1:hover{
+    text-shadow:3px 3px 10px purple;
+}
+.header__s2{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border: 2px solid purple;
+    border-radius: 20px;
+    width: 400px;
+    padding: 10px;
+}
+.header__s2 i{
+    color: purple;
+}
+.header__s2 input{
+    width: 400px;
+    border: none;
+}
+.header__s2 input:focus{
+    outline: none;
+}
+.header__s2:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+/* .header__s2 input:hover{
+    background-color: blueviolet;
+    color: whitesmoke;
+} */
+.header__s3{
+   display: flex;
+   gap: 20px;
+}
+.header__s3 a{
+    text-decoration: none;
+    color: black;
+}
+.header__s3 a i{
+    color: purple;
+}
+.header__s3__div1{
+    display: inline-block;
+    position: relative;
+}
+.header__s3__a__div{
+    display: none;
+    position: absolute;
+    top: 30px;
+    background-color: aliceblue;
+    color: black;
+    width: 100px;
+    padding: 10px;
+    border: 1px solid black;
+    z-index: 1;
+}
+.header__s3__div1:hover .header__s3__a__div{
+    display: block;
+}
+.header__s3__course__div{
+    display: inline-block;
+    position: relative;
+}
+.header__s3__course__child__div{
+    display: none;
+    position: absolute;
+    top: 30px;
+    background-color: aliceblue;
+    color: black;
+    width: 150px;
+    padding: 10px;
+    border: 1px solid black;
+    z-index: 1;
+}
+.header__s3__course__div:hover .header__s3__course__child__div{
+    display: block;
+}
+.header__s3__course__child__div ul{
+    list-style: none;
+    line-height: 30px;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+/* Udemy Header & Nav over here */
+.section1{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+.section1 p{
+    background-color: purple;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: larger;
+    color: whitesmoke;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+.section1 p:hover{
+    background-color: whitesmoke;
+    color:  blueviolet;
+}
+/* udemy section 1 over */
+.section2{
+    position: relative;
+}
+.sec2__popup{
+    border: 2px solid black;
+    background-color: aliceblue;
+    padding: 40px;
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    width:35% ;
+    animation-name: popup;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes popup{
+    0%{transform: scale(0);}
+    100%{transform: scale(1);}
+}
+/* udemy section 2 over */
+.section3 h2,.sec3__p1{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.card__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.course__card{
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 20px 10px;
+    height: fit-content;
+}
+.section3 img{
+    width: 100%;
+    border-radius: 30px;
+}
+.section3 img:hover{
+    opacity: 0.7;
+}
+/* Udemy Section 3 Over */
+.section4{
+    margin-top: 1%;
+}
+.sec4__child{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.section4 p{
+    border: 2px solid purple;
+    padding: 5px;
+    flex-grow: 1;
+    flex-basis: 25%;
+    margin: 5px 5px;
+}
+.section4 p:hover{
+    background-color: blueviolet;
+    color: whitesmoke;
+    /* opacity: 0.6; */
+}
+/* Udemy Section 4 Over */
+.footer{
+    background-color: blueviolet;
+    color: black;
+    padding: 40px 10px;
+}
+.footer__div1{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    line-height: 35px;
+}
+.footer__div1 p{
+    border: 2px solid transparent;
+    border-radius: 20px;
+    padding: 5px;
+    /* transition-duration: 1s;
+    transition-timing-function: linear; */
+}
+.footer__div1 p:hover{
+    /* text-decoration: underline; */
+    cursor: pointer;
+    /* text-decoration-color: black; */
+    background-color: blueviolet;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.footer__div2{
+    display: flex;
+    justify-content: space-between;
+    font-size: x-large;
+    padding: 20px 0;
+    border-top: 2px outset black;
+}
+@media (max-width:1200px) {
+    body{
+        font-size: 10px;
+    }
+    .section1,.header__s2,.header__s3__course__div,.header__s3__div1{
+        display: none;
+    }
+    .sec2__popup{
+        position: absolute;
+        top: 30px;
+        left: 50px;
+        font-size: 8px;
+        width: 25%;
+        height: 35%;
+        padding: 17px;
+    }
+
+}
+@media (max-width:800px) {
+    .course__card{
+        flex-basis: 40%; 
+    }
+}
