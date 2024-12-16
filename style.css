@@ -276,6 +276,9 @@ header{
         height: 35%;
         padding: 17px;
     }
+    .sec2__popup p{
+        display: none;
+    }
 
 }
 @media (max-width:800px) {
