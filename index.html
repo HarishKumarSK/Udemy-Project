@@ -4,18 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Udemy Home Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="blurblackscreen"></div>
     <!-- Udemy Header & Nav Section -->
     <p class="whatsapp"><i class="fa-brands fa-whatsapp"></i></p>
     <header>
+        <p class="menubar" id="menubar"><i class="fa-solid fa-bars"></i></p>
         <div class="header__s1">
             Udemy
+        </div>
+        
+        <div class="aside" id="aside">
+            <!-- <p class="closebtn" id="closebtn"><i class="fa-regular fa-circle-xmark"></i></p> -->
+            <ul class="aside__ul">
+                <p class="closebtn" id="closebtn"><i class="fa-regular fa-circle-xmark"></i></p>
+                <li class="ul1__p1">Development</li>
+                <li class="ul1__p2">Bussiness</li>
+                <li class="ul1__p3">IT & Software</li>
+                <li class="ul1__p4">Art</li>
+                <li class="ul1__p5">Design</li>
+                <li class="ul1__p6">Marketing</li>
+             </ul>
         </div>
         <div class="header__s2">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -45,6 +62,16 @@
             <a href=""><i class="fa-solid fa-user"></i></a>
         </nav>
     </header>
+    <!-- <aside class="aside">
+        <ul>
+            <li class="ul1__p1">Development</li>
+            <li class="ul1__p2">Bussiness</li>
+            <li class="ul1__p3">IT & Software</li>
+            <li class="ul1__p4">Art</li>
+            <li class="ul1__p5">Design</li>
+            <li class="ul1__p6">Marketing</li>
+         </ul>
+    </aside> -->
     <hr>
     <!-- Udemy Header & Nav Section over-->
      <section class="section1">
@@ -243,5 +270,7 @@
                 <p>&copy Udemy, inc</p>
              </div>
         </footer>
+
+        <script src="script.js"></script>
 </body>
 </html>

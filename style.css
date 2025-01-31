@@ -33,7 +33,7 @@ header{
     position: sticky;
     top: 0;
     padding: 5px;
-    z-index: 20;
+    z-index: 5; /*10*/
     width: 99.5%;
 }
 .header__s1{
@@ -96,7 +96,7 @@ header{
     width: 100px;
     padding: 10px;
     border: 1px solid black;
-    z-index: 1;
+    z-index: 7;/*1*/
 }
 .header__s3__div1:hover .header__s3__a__div{
     display: block;
@@ -114,7 +114,7 @@ header{
     width: 150px;
     padding: 10px;
     border: 1px solid black;
-    z-index: 1;
+    z-index: 7;/*1*/
 }
 .header__s3__course__div:hover .header__s3__course__child__div{
     display: block;
@@ -285,4 +285,52 @@ header{
     .course__card{
         flex-basis: 40%; 
     }
+}
+@media (min-width:800px){
+    .aside,.menubar{
+        display: none;
+    }
+}
+.aside{
+    background-color: blueviolet;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: -60%;
+    height: 100vh;
+    transition: 1s ease;
+}
+.aside ul{
+    list-style: none;
+    line-height: 30px;
+    position: relative;
+}
+/* .aside__ul{
+    position: fixed;
+    top: -1px;
+    right: 0px;
+} */
+.aside__ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.closebtn{
+    position: absolute;
+    left: 140px;
+    top: 0px;
+    color: black;
+    font-size: xx-large;
+}
+.blurblackscreen{
+    opacity: 0.5;
+    background-color: black;
+    z-index: 1;
+    color: black;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    transition: 1s ease;
 }
