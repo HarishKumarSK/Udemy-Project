@@ -1,8 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
+    width: 100%;
+    overflow-x: hidden;
     font-family: "Montserrat", sans-serif;
     /* font-family: "Dancing Script", cursive; */
 }
@@ -34,7 +37,9 @@ header{
     top: 0;
     padding: 5px;
     z-index: 5; /*10*/
-    width: 99.5%;
+    /* width: 99.5%; */
+    width: 100%;
+    max-width: 100%;
 }
 .header__s1{
     color: purple;
@@ -126,6 +131,10 @@ header{
     font-weight: bolder;
 }
 /* Udemy Header & Nav over here */
+.section1,.section2,.section3,.section4,.footer{
+    width: 100%;
+    max-width: 100%;
+}
 .section1{
     padding: 20px;
     display: flex;
@@ -270,16 +279,26 @@ header{
     .sec2__popup{
         position: absolute;
         top: 30px;
-        left: 50px;
+        left: 20px;
         font-size: 8px;
-        width: 25%;
-        height: 35%;
+        width: 45%;
+        height: 65%;
         padding: 17px;
     }
     .sec2__popup p{
         display: none;
     }
-
+}
+@media (max-width:500px) {
+    .sec2__popup{
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        font-size: 8px;
+        width: 45%;
+        height: 65%;
+        padding: 17px;
+    }
 }
 @media (max-width:800px) {
     .course__card{
